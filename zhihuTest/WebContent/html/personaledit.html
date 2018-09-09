@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>编辑个人资料-知乎</title>
+        <link rel="icon" href="../images/logo.jpg" type="image/x-icon">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="../css/personal.css" />
+        <link rel="stylesheet" type="text/css" href="../css/Font-Awesome-3.2.1/css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="../css/personaledit.css" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div class="peologo"></div>
+                <div class="menu">
+                    <a href="#">首页</a>
+                    <a href="#">发现</a>
+                    <a href="topicdynamics.html">话题</a>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input class="search-input" type="text" placeholder="搜索你感兴趣的内容..."/>
+                        <div class="searbtn"></div>
+                    </form>
+                </div>  
+                <div class="btnwen" onclick="quiz()">提问</div>             
+                <div class="info">
+                    <a href="#" class="userinfo">
+                        <span class="icon-bell-alt icon-large"></span>
+                    </a>
+                    <a href="#" class="userinfo">
+                        <span class="icon-comments icon-large"></span> 
+                    </a>
+                    <a href="personal.html" class="userinfo"><img src="../images/userinfosmall.jpg" /></a>
+                    <a href="#" onclick="logout()" class="userinfo">退出</a>
+                </div>   
+            </div>
+        </header>
+        <!-- 知乎头部开始 -->
+        <div class="header" hidden>
+            <div class="wrap">
+                <div class="col-2"><div class="logo"></div></div>
+                <div class="col-6"><div class="search">
+                    <form action="">
+                        <input class="search-input" type="text" placeholder="搜索你感兴趣的内容"/>
+                        <div class="searbtn"></div>
+                    </form>
+                </div></div>
+                 <div class="col-2"><div class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="topicdynamics.html">话题</a></li>
+                        <li><a href="#">发现</a></li>
+                        <li><a href="#">消息</a></li>
+                        <li><a href="#">我</a></li>
+                    </ul>
+                </div></div>
+                
+                <div class="info">
+                    <a href="#" class="userinfo">
+                        <span> 故事里的77</span>
+                        <img src="../images/userinfosmall.jpg" alt="故事里的77" />
+                    </a>
+                    <ul class="down">
+                        <li><a href="#">我的主页</a></li>
+                        <li><a href="#">私信</a></li>
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+                <div class="btnwen btn" onclick="quiz()">提问</div>
+            </div>
+        </div>
+        <!-- 知乎头部结束 -->
+        <div class="main">
+            <div class="card">
+                <div class="usercover">
+                    <button class="icon-camera"> 编辑封面图片</button>
+                </div>
+                <div class="peopleinfo">
+                    <div class="photo"><span class="icon-camera xiugai"></span><span class="xiugaizi">修改我的头像</span></div>
+                     <h1 class="mar-zuo">故事里的77 <a href="personal.html" class="back">返回我的主页 <span class="icon-angle-right"></span></a></h1>
+                     <button class="modify" onclick="modify()"><span class="icon-edit"></span>修改</button>
+                </div>
+                    <div class="intruduce">
+                        <div class="xinxi">
+                            <div class="fild">
+                                <h3 class="fildlabel">性别</h3>
+                                <div class="fildcontent">
+                                    <input type="radio" name="sex" checked="checked" />女
+                                    <input type="radio" name="sex" disabled="disabled"/>男
+                                </div>
+                            </div>
+                            <div class="fild">
+                                <h3 class="fildlabel">居住地</h3>
+                                <div class="fildcontent">
+                                    <select name="province" id="province" class="select fildtext" disabled="disabled">
+                                        <option value="">请选择</option>
+                                    </select>
+                                    <select name="city" id="city" class="select fildtext" disabled="disabled">
+                                        <option value="">请选择</option>
+                                    </select>
+                                    <!-- <textarea class="fildtext" id="address" rows="3" cols="30" readonly="true">大东北</textarea> -->
+                                </div>
+                            </div>
+                            <div  class="fild">
+                                <h3 class="fildlabel">所在行业</h3>
+                                <div class="fildcontent">
+                                    <input class="fildtext" id="job" readonly="true" value="计算机" />
+                                </div>
+                            </div>
+                            <div  class="fild">
+                                <h3 class="fildlabel">邮箱</h3>
+                                <div class="fildcontent">
+                                    <input class="fildtext" id="email" readonly="true" value="5588@163.com"/>
+                                </div>
+                            </div>
+                            <div  class="fild">
+                                <h3 class="fildlabel">教育经历</h3>
+                                <div class="fildcontent">
+                                    <input class="fildtext" id="education" readonly="true" value="本科" />
+                                </div>
+                            </div>
+                            <div  class="fild">
+                                <h3 class="fildlabel">出生年月</h3>
+                                <div class="fildcontent">
+                                    <input type="date" id="birthday" readonly="true" class="fildtext"/>
+                                </div>
+                            </div>
+                            <div  class="fild">
+                                <h3 class="fildlabel">电话</h3>
+                                <div class="fildcontent">
+                                    <input class="fildtext" id="phone" readonly="true" value="13945697894" />
+                                </div>
+                            </div>
+                            <div  class="fild">
+                                <h3 class="fildlabel">个人简介</h3>
+                                <div class="fildcontent">
+                                     <textarea class="fildtext" id="introduce" readonly="true" rows="3" cols="30">没啥可说的</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-btn"><button class="save" id="save" hidden onclick="save()">保存</button></div>
+            </div>
+        </div>
+        <!-- 提问的弹出框 -->
+        <div class="Modal-wrapper" id="Modal-wrapper">
+            <div class="Modal-backdrop"></div>
+            <div class="Modal-large">
+                <div class="Modal-inner">
+                    <span class="icon-remove guanbi" onclick="hideModel()"></span>
+                    <h3 class="Modal-title">写下你的问题</h3>
+                    <div class="Modal-subtitle">描述精确的问题更易得到解答</div>
+                    <div class="Modal-content">
+                        <div class="askquestion">
+                            <form action="">
+                                <div class="QuestionAsk-section">
+                                    <div class="asktitle">
+                                        <textarea required="required" rows="2" class="Input" placeholder="问题标题"></textarea>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="asktitle">
+                                        <input class="Input" type="text" placeholder="添加话题"/><span class="icon-search"></span>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="askhead">问题描述(可选)：</div>
+                                    <div class="asktitle">
+                                        <textarea required="required" rows="2" class="Input" placeholder="问题背景、条件等详细信息"></textarea>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="chec"><input type="checkbox" class="checkbox"/>匿名提问</div>
+                                </div>
+                                <div class="tijiao">
+                                    <button class="tijiaobtn">提交问题</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- 提问的弹出框结束 -->
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/personaledit.js"></script>
+    </body>
+
+</html>

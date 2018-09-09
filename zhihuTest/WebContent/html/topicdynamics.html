@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+        <title>话题动态-知乎</title>
+        <link rel="icon" href="../images/logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../css/topicdynamics.css" />
+        <link rel="stylesheet" type="text/css" href="../css/Font-Awesome-3.2.1/css/font-awesome.css" />
+        <script type="text/javascript" src="../js/topicdynamics.js"></script>
+    </head>
+    <body>
+    <!-- 知乎头部开始 -->
+        <div class="header">
+            <div class="wrap">
+                <div class="col-2" style="width:auto;"><div class="logo"></div></div>
+                <div class="col-6" style="width:auto;"><div class="search">
+                    <form action="">
+                        <input class="search-input" type="text" placeholder="搜索你感兴趣的内容"/>
+                        <div class="searbtn"></div>
+                    </form>
+                </div></div>
+                 <div class="col-2" style="width:25%;"><div class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">话题</a></li>
+                        <li><a href="#">发现</a></li>
+                        <li><a href="#">消息</a></li>
+                        <li><a href="personal.html">我</a></li>
+                    </ul>
+                </div></div>
+                
+                <div class="info">
+                    <a href="personal.html" class="userinfo">
+                        <span class="name"> 故事里的77</span>
+                        <img src="../images/userinfosmall.jpg" alt="故事里的77" />
+                    </a>
+                    <a href="login.html" class="userinfo">退出</a>
+                    <ul class="down">
+                        <li><a href="#">我的主页</a></li>
+                        <li><a href="#">私信</a></li>
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+                <div class="btn phone-width" onclick="quiz()">提问</div>
+            </div>
+        </div>
+        <!-- 知乎头部结束 -->
+        <!-- 知乎内容主体部分开始 -->
+        <div class="content">
+            <div class="contentmain">
+            <!-- 知乎右半部分开始 -->
+                <div class="right">
+                    <div class="topics-plaza">
+                        <a href="#" class="zg-btn-blue">
+                        进入话题广场
+                        </a>
+                        <a href="#" class="text">
+                        来这里发现更多有趣话题
+                        </a>
+                    </div>
+                    <div class="topic-recommend">
+                        <div class="topic-recommend-head">
+                            <h2 class="topic-recommend-name">其他人关注的话题</h2>
+                            <a href="#">
+                            换一换
+                            </a>
+                        </div>
+                        <div class="topic-recommend-list">
+                            <div class="listone">
+                                <div class="listimg"></div>
+                                <div class="listwenzi">
+                                    <h3><a href="#" class="tiaozhuan">动漫</a></h3>
+                                    <a href="#" class="guanzhu">关注</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="topic-recommend-list">
+                            <div class="listone">
+                                <div class="listimg"></div>
+                                <div class="listwenzi">
+                                    <h3><a href="#" class="tiaozhuan">动漫</a></h3>
+                                    <a href="#" class="guanzhu">关注</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="topic-recommend-list">
+                            <div class="listone">
+                                <div class="listimg"></div>
+                                <div class="listwenzi">
+                                    <h3><a href="#" class="tiaozhuan">动漫</a></h3>
+                                    <a href="#" class="guanzhu">关注</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 知乎右半部分结束 -->
+                <!-- 知乎左半部分开始 -->
+                <div class="contentmain-left">
+                    <div class="lefttltle">
+                        <i class="tilteimg"></i>
+                        <span>已关注的动态话题</span>
+                        <a href="#">共关注3个话题</a>
+                    </div>
+                    <ul class="topic" id="topic">
+                        <li><a href="movie" class="actived">电影</a></li>
+                        <li><a href="art">艺术</a></li>
+                        <li><a href="music">音乐</a></li>
+                    </ul>
+                    <div class="topicone" id="movie">
+                        <a href="#" class="head">
+                            <img src="../images/movie.jpg" alt="电影" />
+                        </a>
+                        <a href="#" class="headtitle">电影</a>
+                        <div class="order">
+                            <a href="#">热门排序</a>
+                            |
+                            <a href="#" style="color: #259;">时间排序</a>
+                        </div>
+                        <div class="topiclist-container">
+                            <div class="listitem">
+                                <h2><a href="questions.html">哪些话你看了一遍就不会忘</a></h2>
+                                <div class="expandable">
+                                    <div class="zan">
+                                        <a href="#">3783</a>
+                                    </div>
+                                    <div class="name">
+                                       <span class="summary-wrapper">
+                                           <span  class="author-link-line">
+                                               <a href="#">南瓜小姐</a>
+                                           </span>
+                                            <span class="wangming" title="没有故事的女同学">没有故事的女同学</span>
+                                       </span> 
+                                       <div class="article">
+                                           <span class="a">
+                                               欢迎转载，私信告知答主即可。 我只是整理好喜欢的句子，然后分享上来，我写不出这么动人的语句，实在是愧对大家的关注，所以转载无需署名，只需注明来自知乎。 ------------------希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动
+                                           欢迎转载，私信告知答主即可。 我只是整理好喜欢的句子，然后分享上来，我写不出这么动人的语句，实在是愧对大家的关注，所以转载无需署名，只需注明来自知乎。 ------------------希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动
+                                           欢迎转载，私信告知答主即可。 我只是整理好喜欢的句子，然后分享上来，我写不出这么动人的语句，实在是愧对大家的关注，所以转载无需署名，只需注明来自知乎。 ------------------希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动
+                                           </span>
+                                           <a href="#" class="toggle-expand b">显示全部</a>
+                                       </div>
+                                       <div class="banquan">
+                                           <a href="#">关注问题</a>
+                                           <a href="#">302条评论</a>
+                                           <a href="#">作者保留权利</a>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topicone" id="art" hidden>
+                        <a href="#" class="head">
+                            <img src="../images/movie.jpg" alt="电影" />
+                        </a>
+                        <a href="#" class="headtitle">艺术</a>
+                        <div class="order">
+                            <a href="#">热门排序</a>
+                            |
+                            <a href="#" style="color: #259;">时间排序</a>
+                        </div>
+                        <div class="topiclist-container">
+                            <div class="listitem">
+                                <h2><a href="questions.html">哪些话你看了一遍就不会忘</a></h2>
+                                <div class="expandable">
+                                    <div class="zan">
+                                        <a href="#">3783</a>
+                                    </div>
+                                    <div class="name">
+                                       <span class="summary-wrapper">
+                                           <span  class="author-link-line">
+                                               <a href="#">南瓜小姐</a>
+                                           </span>
+                                            <span class="wangming" title="没有故事的女同学">没有故事的女同学</span>
+                                       </span> 
+                                       <div class="article">
+                                           <span class="a">
+                                               欢迎转载，私信告知答主即可。 我只是整理好喜欢的句子，然后分享上来，我写不出这么动人的语句，实在是愧对大家的关注，所以转载无需署名，只需注明来自知乎。 ------------------希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动.
+                                               希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动…
+                                           </span>
+                                           <a href="#" class="toggle-expand b">显示全部</a>
+                                       </div>
+                                       <div class="banquan">
+                                           <a href="#">关注问题</a>
+                                           <a href="#">302条评论</a>
+                                           <a href="#">作者保留权利</a>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topicone" id="music" hidden>
+                        <a href="#" class="head">
+                            <img src="../images/movie.jpg" alt="电影" />
+                        </a>
+                        <a href="#" class="headtitle">音乐</a>
+                        <div class="order">
+                            <a href="#">热门排序</a>
+                            |
+                            <a href="#" style="color: #259;">时间排序</a>
+                        </div>
+                        <div class="topiclist-container">
+                            <div class="listitem">
+                                <h2><a href="questions.html">哪些话你看了一遍就不会忘</a></h2>
+                                <div class="expandable">
+                                    <div class="zan">
+                                        <a href="#">3783</a>
+                                    </div>
+                                    <div class="name">
+                                       <span class="summary-wrapper">
+                                           <span  class="author-link-line">
+                                               <a href="#">南瓜小姐</a>
+                                           </span>
+                                            <span class="wangming" title="没有故事的女同学">没有故事的女同学</span>
+                                       </span> 
+                                       <div class="article">
+                                        <span class="a">
+                                           欢迎转载，私信告知答主即可。 我只是整理好喜欢的句子，然后分享上来，我写不出这么动人的语句，实在是愧对大家的关注，所以转载无需署名，只需注明来自知乎。 ------------------希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动…
+                                           欢迎转载，私信告知答主即可。 我只是整理好喜欢的句子，然后分享上来，我写不出这么动人的语句，实在是愧对大家的关注，所以转载无需署名，只需注明来自知乎。 ------------------希望你们也会喜欢------ 刚好在看亦舒的《承欢记》。看到一段话，觉得触动…</span>
+                                           <a href="#" class="toggle-expand b">显示全部</a>
+                                       </div>
+                                       <div class="banquan">
+                                           <a href="#">关注问题</a>
+                                           <a href="#">302条评论</a>
+                                           <a href="#">作者保留权利</a>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 知乎左半部分结束 -->
+            </div>
+        </div>
+        <!-- 知乎内容主体部分结束 -->
+        <!-- 提问的弹出框 -->
+        <div class="Modal-wrapper" id="Modal-wrapper">
+            <div class="Modal-backdrop"></div>
+            <div class="Modal-large">
+                <div class="Modal-inner">
+                    <span class="icon-remove guanbi" onclick="hideModel()"></span>
+                    <h3 class="Modal-title">写下你的问题</h3>
+                    <div class="Modal-subtitle">描述精确的问题更易得到解答</div>
+                    <div class="Modal-content">
+                        <div class="askquestion">
+                            <form action="">
+                                <div class="QuestionAsk-section">
+                                    <div class="asktitle">
+                                        <textarea required="required" rows="2" class="Input" placeholder="问题标题"></textarea>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="asktitle">
+                                        <input class="Input" type="text" placeholder="添加话题"/><span class="icon-search"></span>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="askhead">问题描述(可选)：</div>
+                                    <div class="asktitle">
+                                        <textarea required="required" rows="2" class="Input" placeholder="问题背景、条件等详细信息"></textarea>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="chec"><input type="checkbox" class="checkbox"/>匿名提问</div>
+                                </div>
+                                <div class="tijiao">
+                                    <button class="tijiaobtn">提交问题</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- 提问的弹出框结束 -->
+    </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+        <title>问题详细-知乎</title>
+        <link rel="icon" href="../images/logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/personaledit.css" />
+        <link rel="stylesheet" type="text/css" href="../css/questions.css" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../css/Font-Awesome-3.2.1/css/font-awesome.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div class="peologo"></div>
+                <div class="menu">
+                    <a href="#">首页</a>
+                    <a href="#">发现</a>
+                    <a href="topicdynamics.html">话题</a>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input class="search-input" type="text" placeholder="搜索你感兴趣的内容..."/>
+                        <div class="searbtn"></div>
+                    </form>
+                </div>  
+                <div class="btnwen" onclick="quiz()">提问</div>             
+                <div class="info">
+                    <a href="#" class="userinfo">
+                        <span class="icon-bell-alt icon-large"></span>
+                    </a>
+                    <a href="#" class="userinfo"> 
+                        <span class="icon-comments icon-large"></span>
+                    </a>
+                    <a href="personal.html" class="userinfo"><img src="../images/userinfosmall.jpg" /></a>
+                    <a href="login.html" class="userinfo">退出</a>
+                </div>   
+            </div>
+        </header>
+          <!-- 知乎头部开始 -->
+        <div class="header" hidden>
+            <div class="wrap">
+                <div class="col-2"><div class="logo"></div></div>
+                <div class="col-6"><div class="search">
+                    <form action="">
+                        <input class="search-input" type="text" placeholder="搜索你感兴趣的内容"/>
+                        <div class="searbtn"></div>
+                    </form>
+                </div></div>
+                 <div class="col-2"><div class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="topicdynamics.html">话题</a></li>
+                        <li><a href="#">发现</a></li>
+                        <li><a href="#">消息</a></li>
+                        <li><a href="personal.html">我</a></li>
+                    </ul>
+                </div></div>
+                
+                <div class="info">
+                    <a href="#" class="userinfo">
+                        <span> 故事里的77</span>
+                        <img src="../images/userinfosmall.jpg" alt="故事里的77" />
+                    </a>
+                    <ul class="down">
+                        <li><a href="#">我的主页</a></li>
+                        <li><a href="#">私信</a></li>
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+                <div class="btnwen btn" id="btn" onclick="quiz()">提问</div>
+            </div>
+        </div>
+        <!-- 知乎头部结束 -->
+       <div class="main1">
+           <div class="card1">
+               <ul class="topic">
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">艺术</a></li>
+                    <li><a href="#">音乐</a></li>
+                </ul>
+                <h1>哪些话你看了一遍就不会忘？</h1>
+                <h4>问题描述：</h4> 
+                <button><span class="icon-edit"></span> <a href="#answer">写回答</a></button>
+           </div>
+       </div>
+       <div class="questions-list">
+            <div class="list-header">
+                <h4>
+                    <span>3</span>
+                    <span>个回答</span>
+                    <button>默认排序</button>
+                </h4>
+            </div>
+            <div class="list-item">
+                <div class="answer-header">
+                    <div class="author">
+                        <img src="../images/touxiang.jpg"/>
+                        <div class="autorintru">
+                            <span class="authorintru-title">
+                                小七哥
+                            </span>
+                            <span class="authorInfo-badge">
+                                <span>在日青年。人工耳蜗佩戴者。</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="shuoming">
+                        <span>5</span>个人赞同了该回答
+                    </div>
+                    <div class="answer-article">
+                        <p><strong>"大哥，别给孩子吃桃，他过敏"</strong></p>
+                        <p>14年陈可辛执导《亲爱的》里面的一句台词，记忆深刻！上映时并没有勇气去影院观看。因为当妈后内心变得格外柔软，不管新闻还是电影都会自动屏蔽类似儿童被拐的事件。后来有一晚孩子睡了，我还没睡意带着好奇心就点开了。于是就有了我这小半生中因为一部电影哭得最撕心裂肺的一次，久久不能释怀。可我说不清到底在难受些什么！影片里鲁晓娟和田文军离婚了。虽然在孩子的教育上有很大分歧，但是他们都用自己的方式爱着儿子鹏鹏。只不过还没有到为了孩子隐忍和包容彼此的地步。</p>
+                    </div>
+                </div>
+                <div class="zantong">
+                    <span class="icon-sort-up">5</span> 
+                    <span class="icon-sort-down"></span>
+                </div>
+            </div>
+             <!-- 回答部分开始 -->
+                  <div class="answer">
+                    <div class="answer-header">
+                        <div class="author">
+                            <span><img src="../images/userinfosmall.jpg"/></span>
+                            <div class="autorintru">
+                                <div class="authorintru-title">
+                                    故事里的77
+                                </div>
+                                <div class="authorInfo-badge">
+                                    <span>我的理想是理想不再是理想。</span>
+                                    <button class="edit"><span class="icon-edit"></span>编辑话题经验</button>
+                                </div>
+                            </div>
+                            <button class="plain">使用匿名身份回答</button>
+                        </div>
+                    </div>
+                    <div class="answer-content">
+                        <a name="answer"></a>
+                      <textarea required="required" rows="2" class="Input" placeholder="写回答..."></textarea>
+                      <div class="answer-footer">
+                          <button class="answer-tijiao">提交回答</button>
+                          <div class="zhuanzai">允许规范转载</div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 回答部分结束 -->
+       </div>
+
+        <!-- 提问的弹出框 -->
+        <div class="Modal-wrapper" id="Modal-wrapper">
+            <div class="Modal-backdrop"></div>
+            <div class="Modal-large">
+                <div class="Modal-inner">
+                    <span class="icon-remove guanbi" onclick="hideModel()"></span>
+                    <h3 class="Modal-title">写下你的问题</h3>
+                    <div class="Modal-subtitle">描述精确的问题更易得到解答</div>
+                    <div class="Modal-content">
+                        <div class="askquestion">
+                            <form action="">
+                                <div class="QuestionAsk-section">
+                                    <div class="asktitle">
+                                        <textarea required="required" rows="2" class="Input" placeholder="问题标题"></textarea>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="asktitle">
+                                        <input class="Input" type="text" placeholder="添加话题"/><span class="icon-search"></span>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="askhead">问题描述(可选)：</div>
+                                    <div class="asktitle">
+                                        <textarea required="required" rows="2" class="Input" placeholder="问题背景、条件等详细信息"></textarea>
+                                    </div>
+                                </div>
+                                <div class="QuestionAsk-section">
+                                    <div class="chec"><input type="checkbox" class="checkbox"/>匿名提问</div>
+                                </div>
+                                <div class="tijiao">
+                                    <button class="tijiaobtn">提交问题</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- 提问的弹出框结束 -->
+        <script type="text/javascript" src="../js/questions.js"></script>
+    </body>
+</html>
