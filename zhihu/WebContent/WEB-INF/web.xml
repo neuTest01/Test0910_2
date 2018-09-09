@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>zhihu</display-name>
+  <welcome-file-list>
+    <welcome-file>page/login.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>120</session-timeout>
+  </session-config>
+  <servlet>
+    <servlet-name>fileUploadServlet</servlet-name>
+    <servlet-class>com.zhihu.servlet.FileUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fileUploadServlet</servlet-name>
+    <url-pattern>/servlet/fileUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>replyServlet</servlet-name>
+    <servlet-class>com.zhihu.servlet.ReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>replyServlet</servlet-name>
+    <url-pattern>/zhihu/ReplyServlet</url-pattern>
+  </servlet-mapping>
+ <!--  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>com.zhihu.util.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>sessionFilter</filter-name>
+    <filter-class>com.zhihu.util.SessionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>sessionFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping> -->
+</web-app>
